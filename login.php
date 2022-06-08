@@ -43,21 +43,31 @@ index.php page. If they are not correct it will echo "Login mislukt".</code> */
 
 
 <html>
+    <head>
+  <link rel="stylesheet" href="style.css">
+</head>
     <body>
         <h1>
-            Login OR Sign Up
+            Login Or Sign Up
         </h1>
-     /* The form where you can enter your username and password. */
+        <form method="POST">
         <table>
-            <form method="POST">
-            <div class="form_input">
+            <p class="form-input">Username : </p>
+            <div class="form-input">
                 <input type="text" name="Username" placeholder=" Enter your Username">
                 </div>
-                <div class="form_input">
+                <br>
+                <p class="form-input">Password : </p>
+                <div class="form-input">
                 <input type="text" name="Wachtwoord" placeholder=" Enter your Password">
                 </div>
+                <br>
+                <div class="form-input">
                 <input type="submit" name="login" value="Login">
+                </div>
         </table>
     </body>
+    <h2>
     <a href="registratie.php">Sign Up</a>
+    </h2>
 </html>

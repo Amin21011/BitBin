@@ -17,24 +17,33 @@ session_start();
 ?>
 
 <html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
     <body>
     <h1>
         Sign Up
     </h1>
-/* This is the form where the user can fill in his username and password. */
         <form method="post">
             <table>
-                <p>Username : </p>
+                <p class="form-input">Username : </p>
+                <div class="form-input">
                 <input type="text" name="Username" required placeholder=" Enter your Username">
+                </div>
                 <br>
-                <p>Wachtwoord : </p>
-                <input type="text" name="Wachtwoord" required placeholder=" Enter your Wachtwoord">
+                <p class="form-input">Password : </p>
+                <div class="form-input">
+                <input type="text" name="Wachtwoord" required placeholder=" Enter your Password">
+                </div>
                 <br>
+                <div class="form-input">
                 <input type="submit" value="Submit" name="submit">
+                </div>
             </table>
         </form>
     </body>
  </html>
+
 
  <?php
 /* Inserting the data into the database. */
