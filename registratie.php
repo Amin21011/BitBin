@@ -21,9 +21,16 @@ session_start();
   <link rel="stylesheet" href="style.css">
 </head>
     <body>
-    <h1>
-        Sign Up
-    </h1>
+    <nav class="navbar">
+        <a href="#" class="logo">
+            <h1>BitBin</h1>
+        </a>
+        <div class="nav-links">
+            <div class="nav-item"><a href="#Code">Code</a></div>
+            <div class="nav-item"><a href="#Login">Log in</a></div>
+            <div class="nav-item"><a href="#SignUp">Sign up</a></div>
+        </div>
+    </nav>
         <form method="post">
             <table>
                 <p class="form-input">Username : </p>
@@ -37,7 +44,7 @@ session_start();
                 </div>
                 <br>
                 <div class="form-input">
-                <input type="submit" value="Submit" name="submit">
+                <input type="submit" value="Sign Up" name="submit">
                 </div>
             </table>
         </form>

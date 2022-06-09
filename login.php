@@ -47,9 +47,16 @@ index.php page. If they are not correct it will echo "Login mislukt".</code> */
   <link rel="stylesheet" href="style.css">
 </head>
     <body>
-        <h1>
-            Login Or Sign Up
-        </h1>
+    <nav class="navbar">
+        <a href="#" class="logo">
+            <h1>BitBin</h1>
+        </a>
+        <div class="nav-links">
+            <div class="nav-item"><a href="#Code">Code</a></div>
+            <div class="nav-item"><a href="#Login">Log in</a></div>
+            <div class="nav-item"><a href="#SignUp">Sign up</a></div>
+        </div>
+    </nav>
         <form method="POST">
         <table>
             <p class="form-input">Username : </p>
