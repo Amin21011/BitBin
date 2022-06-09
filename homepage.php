@@ -52,7 +52,7 @@
             <div class="tekst3">
                 <p>
                     BitBin is very useful since it can be used to send your own codes to your friends or colleagues easily. When you posted
-                    your code, you can find it back pretty fast
+                    your code, you can find it back pretty fast!
                 </p>
             </div>
         </div>
