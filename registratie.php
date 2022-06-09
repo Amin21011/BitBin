@@ -61,6 +61,6 @@ session_start();
         $sql = "INSERT INTO gebruikers (Username, Wachtwoord)
     VALUES ('$Username', '$Wachtwoord')";
         $conn->query($sql);
-        header("location: index.php");
+        header("location: homepage.php");
     }
     ?>
