@@ -75,6 +75,10 @@ index.php page. If they are not correct it will echo "Login mislukt".</code> */
         </table>
     </body>
     <h2>
-    <a href="registratie.php">Sign Up</a>
+    <a><p> OR </p></a>
     </h2>
+    <a href="registratie.php">
+        <input type="button" value="Sign Up">
+        </a>
 </html>
+
