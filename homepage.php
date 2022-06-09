@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="HomeStyle.css">
     <title>Document</title>
 </head>
 <body>
@@ -12,7 +12,7 @@
         </a>
 
         <div class="nav-links">
-            <div class="nav-item"><a href="#Code">Code</a></div>
+            <div class="nav-item"><a href="http://localhost/jarvis/Project%202/Verdieping-f85d899f-d4b19a2a/Codefield/CodeField.html">Code</a></div>
             <div class="nav-item"><a href="#Login">Log in</a></div>
             <div class="nav-item"><a href="#SignUp">Sign up</a></div>
         </div>
