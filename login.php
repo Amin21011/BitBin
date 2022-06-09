@@ -32,7 +32,7 @@ index.php page. If they are not correct it will echo "Login mislukt".</code> */
     foreach ($sql as $row) {
         if ($row['Username'] == $username && $row['Wachtwoord'] == $password) {
             $_SESSION['Username'] = $username;
-            header("location: index.php");
+            header("location: homepage.php");
         } else {
             echo "Login mislukt";
         }
