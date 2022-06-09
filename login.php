@@ -61,12 +61,12 @@ index.php page. If they are not correct it will echo "Login mislukt".</code> */
         <table>
             <p class="form-input">Username : </p>
             <div class="form-input">
-                <input type="text" name="Username" placeholder=" Enter your Username">
+                <input type="text" name="Username" required placeholder=" Enter your Username">
                 </div>
                 <br>
                 <p class="form-input">Password : </p>
                 <div class="form-input">
-                <input type="text" name="Wachtwoord" placeholder=" Enter your Password">
+                <input type="text" name="Wachtwoord" required placeholder=" Enter your Password">
                 </div>
                 <br>
                 <div class="form-input">
@@ -81,4 +81,3 @@ index.php page. If they are not correct it will echo "Login mislukt".</code> */
         <input type="button" value="Sign Up">
         </a>
 </html>
-
