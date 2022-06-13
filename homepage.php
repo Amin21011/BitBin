@@ -8,7 +8,7 @@
     <nav class="navbar">
 
         <a href="#" class="logo">
-            <h1>BitBins</h1>
+            <h1>BitBin</h1>
         </a>
 
         <div class="nav-links">
