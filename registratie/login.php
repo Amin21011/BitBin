@@ -32,7 +32,7 @@ index.php page. If they are not correct it will echo "Login mislukt".</code> */
     foreach ($sql as $row) {
         if ($row['Username'] == $username && $row['Wachtwoord'] == $password) {
             $_SESSION['Username'] = $username;
-            header("location: homepage.php");
+            header("location: /phpfolder/Verdieping-f85d899f-d4b19a2a/Homepage/homepage.html");
         } else {
             echo "Login mislukt";
         }
@@ -48,25 +48,26 @@ index.php page. If they are not correct it will echo "Login mislukt".</code> */
 </head>
     <body>
     <nav class="navbar">
-        <a href="#" class="logo">
+
+        <a href="/phpfolder/Verdieping-f85d899f-d4b19a2a/Homepage/homepage.html" class="logo">
             <h1>BitBin</h1>
         </a>
         <div class="nav-links">
-            <div class="nav-item"><a href="#Code">Code</a></div>
-            <div class="nav-item"><a href="#Login">Log in</a></div>
-            <div class="nav-item"><a href="#SignUp">Sign up</a></div>
+            <div class="nav-item"><a href="/phpfolder/Verdieping-f85d899f-d4b19a2a/Codefield/CodeField.html">Code</a></div>
+            <div class="nav-item"><a href="/phpfolder/Verdieping-f85d899f-d4b19a2a/registratie/login.php">Log in</a></div>
+            <div class="nav-item"><a href="/phpfolder/Verdieping-f85d899f-d4b19a2a/registratie/registratie.php">Sign up</a></div>
         </div>
     </nav>
         <form method="POST">
         <table>
             <p class="form-input">Username : </p>
             <div class="form-input">
-                <input type="text" name="Username" required placeholder=" Enter your Username">
+                <input type="text" name="Username" placeholder=" Enter your Username">
                 </div>
                 <br>
                 <p class="form-input">Password : </p>
                 <div class="form-input">
-                <input type="text" name="Wachtwoord" required placeholder=" Enter your Password">
+                <input type="text" name="Wachtwoord" placeholder=" Enter your Password">
                 </div>
                 <br>
                 <div class="form-input">
@@ -75,9 +76,6 @@ index.php page. If they are not correct it will echo "Login mislukt".</code> */
         </table>
     </body>
     <h2>
-    <a><p> OR </p></a>
+    <a href="registratie.php">Sign Up</a>
     </h2>
-    <a href="registratie.php">
-        <input type="button" value="Sign Up">
-        </a>
 </html>
