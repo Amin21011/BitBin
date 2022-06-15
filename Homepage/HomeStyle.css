@@ -88,3 +88,10 @@ body {
     justify-content: space-evenly;
     margin-top: 60px;
 }
+button {
+    box-shadow: 1px 1px 4px;
+}
+.textArea {
+    border-radius: 7px;
+    box-shadow: 1px 1px 3px;
+}
