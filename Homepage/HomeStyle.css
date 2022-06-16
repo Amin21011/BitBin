@@ -49,19 +49,7 @@ body {
     margin-top: 55px;
 }
 
-.vak1 {
-    display: flex;
-    flex-direction: column;
-    display: inline-block;
-    width: 350px;
-    background-color: #ffffff;
-    border-radius: 5px;
-    box-shadow: 1px 1px 7px;
-    
-    padding: 10px;
-}
-
-.vak2 {
+.vak1, .vak2, .vak3 {
     display: flex;
     flex-direction: column;
     display: inline-block;
@@ -71,20 +59,16 @@ body {
     box-shadow: 1px 1px 7px;
     padding: 10px;
 }
-
-.vak3 {
-    flex-direction: column;
-    display: inline-block;
-    width: 350px;
-    margin-top: 20px;
-    background-color: #ffffff;
-    border-radius: 5px;
-    box-shadow: 1px 1px 7px;
-    padding: 10px;
-} 
 
 .teksten2 {
     display: flex;
     justify-content: space-evenly;
     margin-top: 60px;
+}
+button {
+    box-shadow: 1px 1px 4px;
+}
+.textArea {
+    border-radius: 7px;
+    box-shadow: 1px 1px 3px;
 }

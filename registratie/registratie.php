@@ -22,7 +22,6 @@ session_start();
 </head>
     <body>
     <nav class="navbar">
-
         <a href="/Verdieping-f85d899f-d4b19a2a/Homepage/homepage.html" class="logo">
             <h1>BitBin</h1>
         </a>
@@ -64,6 +63,6 @@ session_start();
         $sql = "INSERT INTO gebruikers (Username, Wachtwoord)
     VALUES ('$Username', '$Wachtwoord')";
         $conn->query($sql);
-        header("location: /phpfolder/Verdieping-f85d899f-d4b19a2a/Homepage/homepage.html");
+        header("location: /verdieping-f85d899f-d4b19a2a/homepage/homepage.html");
     }
     ?>
