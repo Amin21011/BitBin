@@ -8,6 +8,16 @@
                 <!-- Scripts for the page -->
             <script src="CodeMirror-5.65.4/lib/codemirror.js"></script>
             <script src="CodeMirror-5.65.4/mode/xml/xml.js"></script>
+            <script src="CodeMirror-5.65.4/mode/css/css.js"></script>
+            <script src="CodeMirror-5.65.4/mode/javascript/javascript.js"></script>
+            <script src="CodeMirror-5.65.4/mode/php/php.js"></script>
+            <script src="CodeMirror-5.65.4/mode/python/python.js"></script>
+            <script src="CodeMirror-5.65.4/mode/"></script>
+            <script src="CodeMirror-5.65.4/mode/clike/clike.js"></script>
+            <script src="CodeMirror-5.65.4/mode/"></script>
+            <script src="CodeMirror-5.65.4/mode/swift/swift.js"></script>
+            <script src="CodeMirror-5.65.4/mode/sql/sql.js"></script>
+                <!-- Addons for the page -->
             <script src="CodeMirror-5.65.4/addon/edit/closetag.js"></script>
             <script src="CodeMirror-5.65.4/addon/edit/matchbrackets.js"></script>
                 <!-- Css for the textarea-->
@@ -15,13 +25,15 @@
         </head>
     <body>
         <nav class="navbar">
-            <a href="/phpfolder/Verdieping-f85d899f-d4b19a2a/Homepage/homepage.html" class="logo">
+
+            <a href="/Verdieping-f85d899f-d4b19a2a/Homepage/homepage.html" class="logo">
                 <h1>BitBin</h1>
             </a>
+    
             <div class="nav-links">
-                <div class="nav-item"><a href="/phpfolder/Verdieping-f85d899f-d4b19a2a/Codefield/CodeField.html">Code</a></div>
-                <div class="nav-item"><a href="/phpfolder/Verdieping-f85d899f-d4b19a2a/registratie/login.php">Log in</a></div>
-                <div class="nav-item"><a href="/phpfolder/Verdieping-f85d899f-d4b19a2a/registratie/registratie.php">Sign up</a></div>
+                <div class="nav-item"><a href="/Verdieping-f85d899f-d4b19a2a/Codefield/CodeField.html">Code</a></div>
+                <div class="nav-item"><a href="/Verdieping-f85d899f-d4b19a2a/registratie/login.php">Log in</a></div>
+                <div class="nav-item"><a href="/Verdieping-f85d899f-d4b19a2a/registratie/registratie.php">Sign up</a></div>
             </div>
         </nav>
         <div class="Bitbin">
@@ -31,56 +43,42 @@
                         <div class="Bitbin-Left">
                             <h3>Your code:</h3>
                         </div>
-                        <div class="Bitbin-right">
-                            <p class="Highlighting">Highlighting</p>
-                            <label>
-                                <input type="checkbox"/>
-                                <span class="checkbox">   
-                                </span>
-                            </label>
+                        <div class="BitBin-dropdown">
+                            <label class="Code-highlighting" for="Code-Highlighting-Select">Code-highlighting:</label>
+                            <select id="Code-Highlighting-Select">
+                                <option value="None">None</option>
+                                <option value="xml">HTML</option>
+                                <option value="css">CSS</option>
+                                <option value="javascript">Javascript</option>
+                                <option value="php">PHP</option>
+                                <option value="python">Python</option>
+                                <option value="text/x-csrc">C</option>
+                                <option value="text/x-c++src">C++</option>
+                                <option value="text/x-csharp">C#</option>
+                                <option value="swift">Swift</option>
+                                <option value="sql">SQL</option>
+                            </select>
                         </div>
                     </div>
                     <div class="BitBin-textField">
                         <textarea id="editor"></textarea>
                     </div>
-                    <div class="BitBin-bottom-form">
-                        <div class="BitBin-Code-Language">
-                            <label class="Code-highlighting" for="Code-Highlighting-Select">Code-highlighting:</label>
-                        </div>
-                        <div class="BitBin-dropdown">
-                            <select id="Code-Highlighting-Select">
-                                <option value="html">HTML</option>
-                                <option value="css">CSS</option>
-                                <option value="javascript">Javascript</option>
-                                <option value="php">PHP</option>
-                                <option value="python">Python</option>
-                                <option value="java">Java</option>
-                                <option value="c">C</option>
-                                <option value="c++">C++</option>
-                                <option value="c#">C#</option>
-                                <option value="ruby">Ruby</option>
-                                <option value="swift">Swift</option>
-                                <option value="kotlin">Kotlin</option>
-                                <option value="go">Go</option>
-                                <option value="rust">Rust</option>
-                                <option value="typescript">TypeScript</option>
-                                <option value="sql">SQL</option>
-                                <option value="json">JSON</option>
-                                <option value="yaml">YAML</option>
-                                <option value="xml">XML</option>
-                            </select>
-                        </div>
-                    </div>
                 </form>
             </div>
         </div>
     <script>
-        var editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
+        const editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
             lineNumbers: true,
             mode: "xml",
             theme: "dracula",
             autoCloseTags: true,
             matchBrackets: true,
+            linewrapping: true,
+        });
+
+        document.getElementById('Code-Highlighting-Select').addEventListener('change', (event) => {
+            console.log(`Select language: [${event.target.value}]`);
+            editor.setOption('mode', event.target.value);
         });
     </script>
 </html>

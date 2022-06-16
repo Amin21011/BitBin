@@ -22,14 +22,17 @@ session_start();
 </head>
     <body>
     <nav class="navbar">
-        <a href="/phpfolder/Verdieping-f85d899f-d4b19a2a/Homepage/homepage.html" class="logo">
+
+        <a href="/Verdieping-f85d899f-d4b19a2a/Homepage/homepage.html" class="logo">
             <h1>BitBin</h1>
         </a>
+
         <div class="nav-links">
-            <div class="nav-item"><a href="/phpfolder/Verdieping-f85d899f-d4b19a2a/Codefield/CodeField.html">Code</a></div>
-            <div class="nav-item"><a href="/phpfolder/Verdieping-f85d899f-d4b19a2a/registratie/login.php">Log in</a></div>
-            <div class="nav-item"><a href="/phpfolder/Verdieping-f85d899f-d4b19a2a/registratie/registratie.php">Sign up</a></div>
+            <div class="nav-item"><a href="/Verdieping-f85d899f-d4b19a2a/Codefield/CodeField.html">Code</a></div>
+            <div class="nav-item"><a href="/Verdieping-f85d899f-d4b19a2a/registratie/login.php">Log in</a></div>
+            <div class="nav-item"><a href="/Verdieping-f85d899f-d4b19a2a/registratie/registratie.php">Sign up</a></div>
         </div>
+    </nav>
     </nav>
         <form method="post">
             <table>
