@@ -49,34 +49,11 @@ body {
     margin-top: 55px;
 }
 
-.vak1 {
+.vak1, .vak2, .vak3 {
     display: flex;
     flex-direction: column;
     display: inline-block;
     width: 350px;
-    background-color: #ffffff;
-    border-radius: 5px;
-    box-shadow: 1px 1px 7px;
-    
-    padding: 10px;
-}
-
-.vak2 {
-    display: flex;
-    flex-direction: column;
-    display: inline-block;
-    width: 350px;
-    background-color: #ffffff;
-    border-radius: 5px;
-    box-shadow: 1px 1px 7px;
-    padding: 10px;
-}
-
-.vak3 {
-    flex-direction: column;
-    display: inline-block;
-    width: 350px;
-    margin-top: 20px;
     background-color: #ffffff;
     border-radius: 5px;
     box-shadow: 1px 1px 7px;
