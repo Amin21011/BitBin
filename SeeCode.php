@@ -5,6 +5,17 @@
     <title>Document</title>
 </head>
 <body>
+    <nav class="navbar">
+        <a href="/projects.bit-academy.nl/~ani/" class="logo">
+        <h1>BitBin</h1>
+    </a>
+
+    <div class="nav-links">
+        <div class="nav-item">
+            <a href="/projects.bit-academy.nl/~ani/CodeField.html">Code</a>
+        </div>
+    </div>
+    </nav>
     <h1>Here is your code!</h1>
     <?php
     
