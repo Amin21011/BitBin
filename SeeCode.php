@@ -1,21 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="SeeCode.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <nav class="navbar">
-        <a href="/~ani/" class="logo">
-        <h1>BitBin</h1>
-    </a>
-
-    <div class="nav-links">
-        <div class="nav-item">
-            <a href="/~ani/CodeField.html">Code</a>
-        </div>
-    </div>
-    </nav>
     <h1>Here is your code!</h1>
     <?php
     
