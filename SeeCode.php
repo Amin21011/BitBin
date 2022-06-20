@@ -6,13 +6,13 @@
 </head>
 <body>
     <nav class="navbar">
-        <a href="/projects.bit-academy.nl/~ani/" class="logo">
+        <a href="/~ani/" class="logo">
         <h1>BitBin</h1>
     </a>
 
     <div class="nav-links">
         <div class="nav-item">
-            <a href="/projects.bit-academy.nl/~ani/CodeField.html">Code</a>
+            <a href="/~ani/CodeField.html">Code</a>
         </div>
     </div>
     </nav>
