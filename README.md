@@ -1,0 +1,3 @@
+# What is BitBin?
+
+BitBin is a platform that we created for easy sharing of anything you write but especially your code. It gives you all the benefits of a code editor with syntax highlighting and also shares it with your friends and colleagues with one click. Once you published your code, you get a unique link and with that link it will always stay accessible! Unless you delete the code of course.
