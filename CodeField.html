@@ -3,7 +3,7 @@
         <head>
             <title>BitbinShare</title>
                 <!-- Styling of the page -->
-            <link rel="stylesheet" type="text/css" href="style.css">
+            <link rel="stylesheet" type="text/css" href="codestyle.css">
             <link rel="stylesheet" type="text/css" href="CodeMirror-5.65.4/lib/codemirror.css">
                 <!-- Scripts for the page -->
             <script src="CodeMirror-5.65.4/lib/codemirror.js"></script>
@@ -12,9 +12,7 @@
             <script src="CodeMirror-5.65.4/mode/javascript/javascript.js"></script>
             <script src="CodeMirror-5.65.4/mode/php/php.js"></script>
             <script src="CodeMirror-5.65.4/mode/python/python.js"></script>
-            <script src="CodeMirror-5.65.4/mode/"></script>
             <script src="CodeMirror-5.65.4/mode/clike/clike.js"></script>
-            <script src="CodeMirror-5.65.4/mode/"></script>
             <script src="CodeMirror-5.65.4/mode/swift/swift.js"></script>
             <script src="CodeMirror-5.65.4/mode/sql/sql.js"></script>
                 <!-- Addons for the page -->
@@ -25,6 +23,7 @@
         </head>
     <body>
         <nav class="navbar">
+
             <a href="/Verdieping-f85d899f-d4b19a2a/Homepage/homepage.html" class="logo">
                 <h1>BitBin</h1>
             </a>
@@ -39,22 +38,6 @@
                     <div class="Bitbin-header">
                         <div class="Bitbin-Left">
                             <h3>Your code:</h3>
-                        </div>
-                        <div class="Bitbin-right">
-                            <p class="Highlighting">Highlighting</p>
-                            <label>
-                                <input type="checkbox"/>
-                                <span class="checkbox">
-                                </span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="BitBin-textField">
-                        <textarea id="editor"></textarea>
-                    </div>
-                    <div class="BitBin-bottom-form">
-                        <div class="BitBin-Code-Language">
-                            <label class="Code-highlighting" for="Code-Highlighting-Select">Code-highlighting:</label>
                         </div>
                         <div class="BitBin-dropdown">
                             <label class="Code-highlighting" for="Code-Highlighting-Select">Code-highlighting:</label>
@@ -79,19 +62,6 @@
                 </form>
             </div>
         </div>
-    <script>
-        const editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
-            lineNumbers: true,
-            mode: "xml",
-            theme: "dracula",
-            autoCloseTags: true,
-            matchBrackets: true,
-            linewrapping: true,
-        });
-
-        document.getElementById('Code-Highlighting-Select').addEventListener('change', (event) => {
-            console.log(`Select language: [${event.target.value}]`);
-            editor.setOption('mode', event.target.value);
-        });
-    </script>
+    <script src="textareamain.js"></script>
+    </body>
 </html>
