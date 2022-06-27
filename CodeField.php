@@ -24,7 +24,7 @@
     <body>
         <nav class="navbar">
 
-            <a href="/~ani/" class="logo">
+            <a href="index.html" class="logo">
                 <h1>BitBin</h1>
             </a>
     
@@ -58,9 +58,13 @@
                     </div>
                     <div class="BitBin-textField">
                         <textarea id="editor"><?php 
-                            echo $_POST["codefield"]
+                            if (isset($_POST["codefield"])) {
+                                echo $_POST["codefield"];
+                            }
+
                         ?></textarea>
                     </div>
+                    <input type="submit" value="Share"> 
                 </form>
             </div>
         </div>
