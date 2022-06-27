@@ -29,7 +29,7 @@
             </a>
     
             <div class="nav-links">
-                <div class="nav-item"><a href="/~ani/index.html">Code</a></div>
+                <div class="nav-item"><a href="/~ani/CodeField">Code</a></div>
             </div>
         </nav>
         <div class="Bitbin">
@@ -57,7 +57,9 @@
                         </div>
                     </div>
                     <div class="BitBin-textField">
-                        <textarea id="editor"></textarea>
+                        <textarea id="editor"><?php 
+                            echo $_POST["codefield"]
+                        ?></textarea>
                     </div>
                 </form>
             </div>
