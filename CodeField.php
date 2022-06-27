@@ -58,7 +58,9 @@
                     </div>
                     <div class="BitBin-textField">
                         <textarea id="editor"><?php 
-                            echo $_POST["codefield"]
+                            if (isset($_POST["codefield"])) {
+                                echo $_POST["codefield"];
+                            }
 
                         ?></textarea>
                     </div>
