@@ -67,6 +67,12 @@ body {
     height: 200px;
 }
 button {
+    border-radius: 8px;
+    border-color: white;
+    height: 30px;
+    width: 70px;
+    font-size: 13px;
+    
     box-shadow: 1px 1px 4px;
 }
 .CodeMirror {
