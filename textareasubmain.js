@@ -1,4 +1,4 @@
-const codefield = CodeMirror.fromTextArea(document.getElementById("codefield"), {
+const editor = CodeMirror.fromTextArea(document.getElementById("codefield"), {
     lineNumbers: true,
     mode: "xml",
     theme: "dracula",

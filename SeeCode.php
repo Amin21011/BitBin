@@ -20,7 +20,7 @@ $codeResult = $sql2;
 <head>
     <title>BitbinShare</title>
         <!-- Styling of the page -->
-    <link rel="stylesheet" href="GetCode.css">
+    
     <link rel="stylesheet" type="text/css" href="CodeMirror-5.65.4/lib/codemirror.css">
         <!-- Scripts for the page -->
     <script src="CodeMirror-5.65.4/lib/codemirror.js"></script>
@@ -37,6 +37,7 @@ $codeResult = $sql2;
     <script src="CodeMirror-5.65.4/addon/edit/matchbrackets.js"></script>
         <!-- Css for the textarea-->
     <link href="CodeMirror-5.65.4/theme/dracula.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="Getcode.css">
 </head>
         <body>
             <nav class="navbar">
@@ -62,15 +63,15 @@ $codeResult = $sql2;
             ?></textarea>
         </body>
     <script>
-        const codeView = CodeMirror.fromTextArea(document.getElementById("codeView"), {
+        const editor = CodeMirror.fromTextArea(document.getElementById("codeView"), {
             lineNumbers: true,
             mode: "xml",
             theme: "dracula",
             autoCloseTags: true,
             matchBrackets: true,
             lineWrapping: true,
-            readOnly: true,
-            
+            viewportMargin: Infinity,
+            readOnly: true,  
         });
     </script>
 </html>
