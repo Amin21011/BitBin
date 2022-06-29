@@ -1,3 +1,8 @@
+<?php
+
+include 'conn.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +20,7 @@
 </head>
     <body>
         <nav class="navbar">
-            <a href="index.html" class="logo">
+            <a href="index.php" class="logo">
                 <h1>BitBin</h1>
             </a>
 

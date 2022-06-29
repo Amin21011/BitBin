@@ -1,3 +1,20 @@
+<?php
+
+include 'conn.php';
+
+$uniqueLink = uniqid();
+$editor = $_POST["editor"];
+$language = $_POST["Code-Highlighting-Select"];
+
+$sql ="INSERT INTO codedata (code, language, uniqueLink) 
+VALUES ('$editor', '$language', '$uniqueLink')";
+$stmt = $pdo->prepare($sql);
+$stmt->execute();
+
+$sql2 = "SELECT code FROM codedata";
+$codeResult = $sql2;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,14 +22,19 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Here is your code!</h1>
-    <?php
-    
-    session_start();
+    <nav class="navbar">
+        <a href="index.php" class="logo">
+            <h1>BitBin</h1>
+        </a>
 
-    $_SESSION = $_POST["codeField"];
-    $code = $_SESSION;
-    ?>
-    <textarea name="" id="" cols="30" rows="10"><?=$code?></textarea>
+        <div class="nav-links">
+            <div class="nav-item">
+                <a href="CodeField.php">Code</a>
+            </div>
+        </div>
+    </nav>
+
+    <h1>Here is your code!</h1>
+    <textarea name="textblok" id="textblok" cols="100" rows="40" readonly><?php $stmt2?> </textarea>
 </body>
 </html>
