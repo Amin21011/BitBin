@@ -34,14 +34,14 @@
         </nav>
         <div class="Bitbin">
             <div class="Bitbin-form">
-                <form id="Bitbin">
+                <form id="Bitbin" action="SeeCode.php" method="POST">
                     <div class="Bitbin-header">
                         <div class="Bitbin-Left">
                             <h3>Your code:</h3>
                         </div>
                         <div class="BitBin-dropdown">
                             <label class="Code-highlighting" for="Code-Highlighting-Select">Code-highlighting:</label>
-                            <select id="Code-Highlighting-Select">
+                            <select name="Code-Highlighting-Select" id="Code-Highlighting-Select">
                                 <option value="None">None</option>
                                 <option value="xml">HTML</option>
                                 <option value="css">CSS</option>
@@ -57,11 +57,10 @@
                         </div>
                     </div>
                     <div class="BitBin-textField">
-                        <textarea id="editor"><?php 
+                        <textarea name="editor" id="editor"><?php 
                             if (isset($_POST["codefield"])) {
                                 echo $_POST["codefield"];
                             }
-
                         ?></textarea>
                     </div>
                     <input type="submit" value="Share"> 
