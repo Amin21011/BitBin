@@ -1,3 +1,22 @@
+<?php
+
+include 'conn.php';
+
+if (isset($_POST['PageContent'])) {
+    $uniqueLink = $_GET[uniqid()] ?? '';
+    
+    $stmt = $pdo->prepare('INSERT INTO codedata (code, language, uniqueLink) 
+VALUES (' .$_POST["editor"]. ', ' .$_POST["Code-Highlighting-Select"]. '$uniqueLink');
+
+$stmt->execute([$uniqueLink]);
+
+$stmt->debugDumpParams();
+var_dump($stmt->fetchAll());
+
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
         <head>
@@ -24,12 +43,12 @@
     <body>
         <nav class="navbar">
 
-            <a href="index.html" class="logo">
+            <a href="index.php" class="logo">
                 <h1>BitBin</h1>
             </a>
     
             <div class="nav-links">
-                <div class="nav-item"><a href="/~ani/CodeField">Code</a></div>
+                <div class="nav-item"><a href="CodeField">Code</a></div>
             </div>
         </nav>
         <div class="Bitbin">
@@ -41,7 +60,7 @@
                         </div>
                         <div class="BitBin-dropdown">
                             <label class="Code-highlighting" for="Code-Highlighting-Select">Code-highlighting:</label>
-                            <select name="Code-Highlighting-Select" id="Code-Highlighting-Select">
+                            <select id="Code-Highlighting-Select" name="Code-Highlighting-Select">
                                 <option value="None">None</option>
                                 <option value="xml">HTML</option>
                                 <option value="css">CSS</option>
@@ -57,13 +76,13 @@
                         </div>
                     </div>
                     <div class="BitBin-textField">
-                        <textarea name="editor" id="editor"><?php 
+                        <textarea id="editor" name="editor"><?php
                             if (isset($_POST["codefield"])) {
                                 echo $_POST["codefield"];
                             }
                         ?></textarea>
                     </div>
-                    <input type="submit" value="Share"> 
+                    <input type="submit" value="Share" name="PageContent">
                 </form>
             </div>
         </div>
