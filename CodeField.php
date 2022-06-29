@@ -53,7 +53,7 @@ var_dump($stmt->fetchAll());
         </nav>
         <div class="Bitbin">
             <div class="Bitbin-form">
-                <form action="SeeCode.php" method="post">
+                <form id="Bitbin" action="SeeCode.php" method="POST">
                     <div class="Bitbin-header">
                         <div class="Bitbin-Left">
                             <h3>Your code:</h3>
@@ -80,7 +80,6 @@ var_dump($stmt->fetchAll());
                             if (isset($_POST["codefield"])) {
                                 echo $_POST["codefield"];
                             }
-
                         ?></textarea>
                     </div>
                     <input type="submit" value="Share" name="PageContent">
