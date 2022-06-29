@@ -37,7 +37,7 @@
     /* It's the CSS for the CodeMirror editor (AKA The code textfield). */
     .CodeMirror {
         width: 98.5%;
-        min-height: 850px;
+        min-height: fit-content;
         resize: vertical;
 
         margin: 10px;
