@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <title>BitbinShare</title>
+                <!-- Styling of the page -->
+            <link rel="stylesheet" type="text/css" href="style.css">
+            <link rel="stylesheet" type="text/css" href="CodeMirror-5.65.4/lib/codemirror.css">
+                <!-- Scripts for the page -->
+            <script src="CodeMirror-5.65.4/lib/codemirror.js"></script>
+            <script src="CodeMirror-5.65.4/mode/xml/xml.js"></script>
+            <script src="CodeMirror-5.65.4/addon/edit/closetag.js"></script>
+            <script src="CodeMirror-5.65.4/addon/edit/matchbrackets.js"></script>
+                <!-- Css for the textarea-->
+            <link href="CodeMirror-5.65.4/theme/dracula.css" rel="stylesheet" type="text/css">
+        </head>
+    <body>
+        <nav class="navbar">
+            <a href="/phpfolder/Verdieping-f85d899f-d4b19a2a/Homepage/homepage.html" class="logo">
+                <h1>BitBin</h1>
+            </a>
+            <div class="nav-links">
+                <div class="nav-item"><a href="/phpfolder/Verdieping-f85d899f-d4b19a2a/Codefield/CodeField.html">Code</a></div>
+                <div class="nav-item"><a href="/phpfolder/Verdieping-f85d899f-d4b19a2a/registratie/login.php">Log in</a></div>
+                <div class="nav-item"><a href="/phpfolder/Verdieping-f85d899f-d4b19a2a/registratie/registratie.php">Sign up</a></div>
+            </div>
+        </nav>
+        <div class="Bitbin">
+            <div class="Bitbin-form">
+                <form id="Bitbin">
+                    <div class="Bitbin-header">
+                        <div class="Bitbin-Left">
+                            <h3>Your code:</h3>
+                        </div>
+                        <div class="Bitbin-right">
+                            <p class="Highlighting">Highlighting</p>
+                            <label>
+                                <input type="checkbox"/>
+                                <span class="checkbox">   
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="BitBin-textField">
+                        <textarea id="editor"></textarea>
+                    </div>
+                    <div class="BitBin-bottom-form">
+                        <div class="BitBin-Code-Language">
+                            <label class="Code-highlighting" for="Code-Highlighting-Select">Code-highlighting:</label>
+                        </div>
+                        <div class="BitBin-dropdown">
+                            <select id="Code-Highlighting-Select">
+                                <option value="html">HTML</option>
+                                <option value="css">CSS</option>
+                                <option value="javascript">Javascript</option>
+                                <option value="php">PHP</option>
+                                <option value="python">Python</option>
+                                <option value="java">Java</option>
+                                <option value="c">C</option>
+                                <option value="c++">C++</option>
+                                <option value="c#">C#</option>
+                                <option value="ruby">Ruby</option>
+                                <option value="swift">Swift</option>
+                                <option value="kotlin">Kotlin</option>
+                                <option value="go">Go</option>
+                                <option value="rust">Rust</option>
+                                <option value="typescript">TypeScript</option>
+                                <option value="sql">SQL</option>
+                                <option value="json">JSON</option>
+                                <option value="yaml">YAML</option>
+                                <option value="xml">XML</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    <script>
+        var editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
+            lineNumbers: true,
+            mode: "xml",
+            theme: "dracula",
+            autoCloseTags: true,
+            matchBrackets: true,
+        });
+    </script>
+</html>
