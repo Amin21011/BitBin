@@ -11,7 +11,7 @@ VALUES ('$editor', '$language', '$uniqueLink')";
 $stmt1 = $pdo->prepare($sql1);
 $stmt1->execute();
 
-$sql2 = "SELECT code FROM codedata";
+$sql2 = "SELECT * FROM codedata";
 $codeResult = $sql2;
 ?>
 
