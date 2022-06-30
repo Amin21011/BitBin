@@ -6,10 +6,10 @@ $uniqueLink = uniqid();
 $editor = $_POST["editor"];
 $language = $_POST["Code-Highlighting-Select"];
 
-$sql ="INSERT INTO codedata (code, language, uniqueLink) 
+$sql1 ="INSERT INTO codedata (code, language, uniqueLink) 
 VALUES ('$editor', '$language', '$uniqueLink')";
-$stmt = $pdo->prepare($sql);
-$stmt->execute();
+$stmt1 = $pdo->prepare($sql1);
+$stmt1->execute();
 
 $sql2 = "SELECT code FROM codedata";
 $codeResult = $sql2;
