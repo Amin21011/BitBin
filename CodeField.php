@@ -1,22 +1,3 @@
-<?php
-
-include 'conn.php';
-
-if (isset($_POST['PageContent'])) {
-    $uniqueLink = $_GET[uniqid()] ?? '';
-    
-    $stmt = $pdo->prepare('INSERT INTO codedata (code, language, uniqueLink) 
-VALUES (' .$_POST["editor"]. ', ' .$_POST["Code-Highlighting-Select"]. '$uniqueLink');
-
-$stmt->execute([$uniqueLink]);
-
-$stmt->debugDumpParams();
-var_dump($stmt->fetchAll());
-
-}
-
-?>
-
 <!DOCTYPE html>
 <html>
     <head>

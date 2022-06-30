@@ -4,7 +4,7 @@ include 'conn.php';
 
 $uniqid = $_GET['uniqid'] ?? '';
 
-$sql2 = "SELECT code FROM codedata WHERE uniqueLink = ? LIMIT 1";
+$sql2 = "SELECT code,language FROM codedata WHERE uniqueLink = ? LIMIT 1";
 $smtmt = $pdo->prepare($sql2);
 $smtmt->execute([$uniqid]);
 $result = $smtmt->fetch();
