@@ -41,10 +41,9 @@ $language = $result['language'];
                     <h1>BitBin</h1>
                 </a>
 
-                <div class="nav-links">
-                    <div class="nav-item">
-                        <a href="CodeField.php">Code</a>
-                    </div>
+            <div class="nav-links">
+                <div class="nav-item">
+                    <a href="CodeField.php">Code</a>
                 </div>
             </nav>
             <?php

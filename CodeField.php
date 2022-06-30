@@ -19,28 +19,28 @@ var_dump($stmt->fetchAll());
 
 <!DOCTYPE html>
 <html>
-        <head>
-            <title>BitbinShare</title>
-                <!-- Styling of the page -->
+    <head>
+        <title>BitbinShare</title>
+            <!-- Styling of the page -->
            
-            <link rel="stylesheet" type="text/css" href="CodeMirror-5.65.4/lib/codemirror.css">
-                <!-- Scripts for the page -->
-            <script src="CodeMirror-5.65.4/lib/codemirror.js"></script>
-            <script src="CodeMirror-5.65.4/mode/xml/xml.js"></script>
-            <script src="CodeMirror-5.65.4/mode/css/css.js"></script>
-            <script src="CodeMirror-5.65.4/mode/javascript/javascript.js"></script>
-            <script src="CodeMirror-5.65.4/mode/php/php.js"></script>
-            <script src="CodeMirror-5.65.4/mode/python/python.js"></script>
-            <script src="CodeMirror-5.65.4/mode/clike/clike.js"></script>
-            <script src="CodeMirror-5.65.4/mode/swift/swift.js"></script>
-            <script src="CodeMirror-5.65.4/mode/sql/sql.js"></script>
-                <!-- Addons for the page -->
-            <script src="CodeMirror-5.65.4/addon/edit/closetag.js"></script>
-            <script src="CodeMirror-5.65.4/addon/edit/matchbrackets.js"></script>
-                <!-- Css for the textarea-->
-            <link href="CodeMirror-5.65.4/theme/dracula.css" rel="stylesheet" type="text/css">
-            <link rel="stylesheet" type="text/css" href="codestyle.css">
-        </head>
+        <link rel="stylesheet" type="text/css" href="CodeMirror-5.65.4/lib/codemirror.css">
+            <!-- Scripts for the page -->
+        <script src="CodeMirror-5.65.4/lib/codemirror.js"></script>
+        <script src="CodeMirror-5.65.4/mode/xml/xml.js"></script>
+        <script src="CodeMirror-5.65.4/mode/css/css.js"></script>
+        <script src="CodeMirror-5.65.4/mode/javascript/javascript.js"></script>
+        <script src="CodeMirror-5.65.4/mode/php/php.js"></script>
+        <script src="CodeMirror-5.65.4/mode/python/python.js"></script>
+        <script src="CodeMirror-5.65.4/mode/clike/clike.js"></script>
+        <script src="CodeMirror-5.65.4/mode/swift/swift.js"></script>
+        <script src="CodeMirror-5.65.4/mode/sql/sql.js"></script>
+            <!-- Addons for the page -->
+        <script src="CodeMirror-5.65.4/addon/edit/closetag.js"></script>
+        <script src="CodeMirror-5.65.4/addon/edit/matchbrackets.js"></script>
+            <!-- Css for the textarea-->
+        <link href="CodeMirror-5.65.4/theme/dracula.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="codestyle.css">
+    </head>
     <body>
         <nav class="navbar">
 
@@ -85,11 +85,6 @@ var_dump($stmt->fetchAll());
                     </div>
                     <input type="submit" value="Share" name="PageContent">
                 </form>
-
-                <?php
-                    echo "this is the code  on the page: " . $_POST["editor"] . " " . $_POST["Code-Highlighting-Select"];
-
-                ?>
             </div>
         </div>
         <script src="textareamain.js"></script>
