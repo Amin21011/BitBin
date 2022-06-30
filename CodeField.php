@@ -54,7 +54,7 @@ var_dump($stmt->fetchAll());
         </nav>
         <div class="Bitbin">
             <div class="Bitbin-form">
-                <form id="Bitbin" action="SeeCode.php" method="POST">
+                <form id="Bitbin" action="saveCode.php" method="POST">
                     <div class="Bitbin-header">
                         <div class="Bitbin-Left">
                             <h3>Your code:</h3>

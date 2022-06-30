@@ -2,17 +2,14 @@
 
 include 'conn.php';
 
-$uniqueLink = uniqid();
-$editor = $_POST["editor"];
-$language = $_POST["Code-Highlighting-Select"];
+$uniqid = $_GET['uniqid'] ?? '';
 
-$sql ="INSERT INTO codedata (code, language, uniqueLink) 
-VALUES ('$editor', '$language', '$uniqueLink')";
-$stmt = $pdo->prepare($sql);
-$stmt->execute();
-
-$sql2 = "SELECT code FROM codedata";
-$codeResult = $sql2;
+$sql2 = "SELECT code FROM codedata WHERE uniqueLink = ? LIMIT 1";
+$smtmt = $pdo->prepare($sql2);
+$smtmt->execute([$uniqid]);
+$result = $smtmt->fetch();
+$code = $result['code'];
+$language = $result['language'];
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +17,6 @@ $codeResult = $sql2;
 <head>
     <title>BitbinShare</title>
         <!-- Styling of the page -->
-    
     <link rel="stylesheet" type="text/css" href="CodeMirror-5.65.4/lib/codemirror.css">
         <!-- Scripts for the page -->
     <script src="CodeMirror-5.65.4/lib/codemirror.js"></script>
@@ -41,7 +37,7 @@ $codeResult = $sql2;
 </head>
         <body>
             <nav class="navbar">
-                <a href="index.html" class="logo">
+                <a href="index.php" class="logo">
                     <h1>BitBin</h1>
                 </a>
 
@@ -52,26 +48,13 @@ $codeResult = $sql2;
                 </div>
             </nav>
             <?php
-                $lang = $_POST["Code-Highlighting-Select"];
-                $data = $_POST["editor"];
             ?>
             <h1>Here is your code!</h1>
             <textarea name="codeView" id="codeView" readonly><?php 
-                if(isset($data)) {
-                    echo $data;
-                }
+                if(isset($code)) {
+                    echo $code;
+                }   
             ?></textarea>
         </body>
-    <script>
-        const editor = CodeMirror.fromTextArea(document.getElementById("codeView"), {
-            lineNumbers: true,
-            mode: "xml",
-            theme: "dracula",
-            autoCloseTags: true,
-            matchBrackets: true,
-            lineWrapping: true,
-            viewportMargin: Infinity,
-            readOnly: true,  
-        });
-    </script>
+    <script src="textareaseecode.js"></script>
 </html>

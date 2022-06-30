@@ -40,7 +40,9 @@ body {
 
 .CodeMirror {
     pointer-events: none;
+    min-height: 500px;
     height: auto;
+    
     
     margin-bottom: 5px;
     border-radius: 5px;
