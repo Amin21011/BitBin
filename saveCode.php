@@ -1,5 +1,6 @@
 <?php
 
+/* This is the PHP code that is executed when the user clicks the "Save" button. */
 include 'conn.php';
 
 $uniqueLink = uniqid();
