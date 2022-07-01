@@ -38,6 +38,9 @@ body {
     margin-left: 10px;
 }
 
+#linkCopy {
+    width: 600px;
+}
 .CodeMirror {
     pointer-events: none;
     min-height: 500px;
