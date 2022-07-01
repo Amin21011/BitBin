@@ -1,8 +1,10 @@
+/* Setting the background color and the font of the body. */
 body {
     background-color: rgb(239, 239, 239);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/* The css for the navbar. */
 .navbar {
     background-color: rgb(0, 20, 112);
     height: 41px;
@@ -37,6 +39,7 @@ body {
     margin-left: 10px;
 }
 
+/* The css for the website. */
 .headText {
     display: flex;
     justify-content: center;
@@ -49,7 +52,9 @@ body {
     margin-top: 55px;
 }
 
-.vak1, .vak2, .vak3 {
+.vak1,
+.vak2,
+.vak3 {
     display: flex;
     flex-direction: column;
     display: inline-block;
@@ -66,15 +71,16 @@ body {
     margin-top: 60px;
     height: 200px;
 }
-button {
+
+/* Making the submit button look better. */
+input[type=submit] {
     border-radius: 8px;
     border-color: white;
     height: 30px;
     width: 70px;
     font-size: 13px;
-    
-    box-shadow: 1px 1px 4px;
 }
+
 .CodeMirror {
     width: 400px;
     height: auto;
@@ -85,7 +91,8 @@ button {
     -moz-box-shadow: 2px 2px 10px 1.5px #010101;
     box-shadow: 2px 2px 10px 1.5px #000000;
 }
+
 .CodeMirror-scroll {
     overflow-y: hidden;
     overflow-x: auto;
-  }
+}

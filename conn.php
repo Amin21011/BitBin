@@ -1,4 +1,5 @@
 <?php
+/* Connecting to the database. */
 $servername = "localhost";
 $username = "bit_academy";
 $password = "bit_academy";

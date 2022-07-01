@@ -46,15 +46,15 @@ $language = $result['language'];
                     <a href="CodeField.php">Code</a>
                 </div>
             </nav>
-            <?php
-            ?>
-            <h1>Here is your code!</h1>
-            <h2 id="language" data-language="<?= $language ?>">Chosen language = '<?= $language ?>'</h2>
-            <div class="ui action input">
-                <input type="text" name="" class="copyInput" id="LinkArea">
-                <button name="copyButton" id="copyButton" onclick="CopyLink()">Copy</button> <br><br>
+            <div class="Bitbin-header">
+                <div class="Bitbin-Left">
+                    <h3>Here is your code!</h3>
+                </div>
+                <div class="langauge">
+                    <h4 id="language" data-language="<?= $language ?>">Chosen language = "<?= $language ?>"</h4>
+                    <button onclick="CopyLink()">Copy Link</button> <br><br>
+                </div>
             </div>
-
             <textarea name="codeView" id="codeView" readonly><?php 
                 if(isset($code)) {
                     echo "$code";
