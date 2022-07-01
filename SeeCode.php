@@ -50,7 +50,10 @@ $language = $result['language'];
             ?>
             <h1>Here is your code!</h1>
             <h3><?=  "Chosen language = '$language'"?></h3>
-            <button onclick="CopyLink()">Copy Link</button> <br><br>
+            <div class="ui action input">
+                <input type="text" name="" class="copyInput" id="LinkArea">
+                <button name="copyButton" id="copyButton" onclick="CopyLink()">Copy</button> <br><br>
+            </div>
             <textarea name="codeView" id="codeView" readonly><?php 
                 if(isset($code, $language)) {
                     echo "$code";
