@@ -33,7 +33,7 @@ $language = $result['language'];
     <script src="CodeMirror-5.65.4/addon/edit/matchbrackets.js"></script>
         <!-- Css for the textarea-->
     <link href="CodeMirror-5.65.4/theme/dracula.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="Getcode.css">
+    <link rel="stylesheet" href="GetCode.css">
 </head>
         <body>
             <nav class="navbar">
@@ -49,11 +49,13 @@ $language = $result['language'];
             <?php
             ?>
             <h1>Here is your code!</h1>
+            <h3><?=  "Chosen language = '$language'"?></h3>
+            <button onclick="CopyLink()">Copy Link</button> <br><br>
             <textarea name="codeView" id="codeView" readonly><?php 
-                if(isset($code)) {
-                    echo $code;
+                if(isset($code, $language)) {
+                    echo "$code";
                 }   
             ?></textarea>
         </body>
-    <script src="textareaseecode.js"></script>
+    <script src="seecode.js"></script>
 </html>
