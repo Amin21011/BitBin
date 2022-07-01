@@ -49,13 +49,10 @@ $language = $result['language'];
             <?php
             ?>
             <h1>Here is your code!</h1>
-            <h3><?=  "Chosen language = '$language'"?></h3>
-            <div class="ui action input">
-                <input type="text" name="" class="copyInput" id="LinkArea">
-                <button name="copyButton" id="copyButton" onclick="CopyLink()">Copy</button> <br><br>
-            </div>
+            <h2 id="language" data-language="<?= $language ?>"><?= $language ?></h2>
+            <button onclick="CopyLink()">Copy Link</button> <br><br>
             <textarea name="codeView" id="codeView" readonly><?php 
-                if(isset($code, $language)) {
+                if(isset($code)) {
                     echo "$code";
                 }   
             ?></textarea>
