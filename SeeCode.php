@@ -50,8 +50,8 @@ $language = $result['language'];
             ?>
             <h1>Here is your code!</h1>
             <h2 id="language" data-language="<?= $language ?>">Chosen language = '<?= $language ?>'</h2>
-            <div>
-                <input type="text" id="LinkArea" value="">
+            <div class="ui action input">
+                <input type="text" name="" class="copyInput" id="LinkArea">
                 <button name="copyButton" id="copyButton" onclick="CopyLink()">Copy</button> <br><br>
             </div>
 
