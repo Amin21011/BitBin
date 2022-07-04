@@ -47,12 +47,11 @@ $language = $result['language'];
                 </div>
             </nav>
             <div class="Bitbin-header">
-                <div class="Bitbin-Left">
-                    <h3>Here is your code!</h3>
-                </div>
-                <div class="langauge">
-                    <h4 id="language" data-language="<?= $language ?>">Chosen language = "<?= $language ?>"</h4>
-                    <button onclick="CopyLink()">Copy Link</button> <br><br>
+                    <div class="language">
+                        <h4 id="language" data-language="<?= $language ?>">Chosen language = "<?= $language ?>"</h4>
+                        <input type="text" id="LinkArea">
+                        <button id="copyButton" onclick="CopyLink()">Copy Link</button> <br><br>
+                    </div>
                 </div>
             </div>
             <textarea name="codeView" id="codeView" readonly><?php 

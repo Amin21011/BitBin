@@ -80,7 +80,9 @@ input[type=submit] {
     width: 70px;
     font-size: 13px;
 }
-
+#button {
+    cursor: pointer;
+}
 .CodeMirror {
     width: 400px;
     height: auto;

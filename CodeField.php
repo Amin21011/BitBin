@@ -64,7 +64,7 @@
                             }
                         ?></textarea>
                     </div>
-                    <input type="submit" value="Share" name="PageContent">
+                    <input type="submit" id="sharebutton" value="Share" name="PageContent">
                 </form>
             </div>
         </div>
