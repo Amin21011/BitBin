@@ -24,5 +24,5 @@ function CopyLink() {
     navigator.clipboard.writeText(Link)
     console.log("Link copied");
     const ButtonValue = document.getElementById("copyButton");
-    ButtonValue.textContent = 'Copied';
+    ButtonValue.textContent = 'Link Copied';
 };

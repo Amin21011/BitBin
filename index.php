@@ -67,10 +67,11 @@ include 'conn.php';
             <form action="CodeField.php" method="post">
                 <div class="codeArea">
                     <div class="textArea">
+                        
                         <textarea id="codefield" name="codefield"></textarea>
                     </div>
                     <div class="button">
-                        <input type="submit" value="Enlarge">
+                        <input type="submit" id="button" value="Enlarge">
                     </div>
                 </div>
             </form>
