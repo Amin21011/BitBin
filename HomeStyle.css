@@ -82,9 +82,15 @@ input[type=submit] {
 }
 #button {
     cursor: pointer;
+    background-color: #57be8e;
+    color: white;
+    position:absolute;
+    top: 800px;
+    right: 1155px;
+
 }
 .CodeMirror {
-    width: 400px;
+    width: 376px;
     height: auto;
 
     margin-bottom: 5px;

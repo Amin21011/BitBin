@@ -58,10 +58,13 @@ body {
     align-items: center;
 }
 #LinkArea {
-    margin-left: 1420px;
+    margin-left: 1410px;
+    margin-right: 10px;
 }
 #copyButton {
     cursor: pointer;
+    background-color: #57be8e;
+    color: white;
 }
 /* Making the submit button look better. */
 button {
@@ -73,5 +76,5 @@ button {
 }
 
 .CodeMirror-scroll {
-    min-height: 500px;
+    min-height: 810px;
 }

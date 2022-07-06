@@ -48,7 +48,7 @@ $language = $result['language'];
             </nav>
             <div class="Bitbin-header">
                     <div class="language">
-                        <h4 id="language" data-language="<?= $language ?>">Chosen language = "<?= $language ?>"</h4>
+                        <h4 id="language" data-language="<?= $language ?>">Language Selected: <?= $language ?></h4>
                         <input type="text" id="LinkArea">
                         <button id="copyButton" onclick="CopyLink()">Copy Link</button> <br><br>
                     </div>
