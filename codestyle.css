@@ -52,6 +52,8 @@
     }
     #sharebutton {
         cursor: pointer;
+        background-color: #57be8e;
+        color: white;
     }
     /* Making the submit button look better. */
     input[type=submit] {
