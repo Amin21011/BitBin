@@ -1,12 +1,11 @@
 # What is BitBin?
 
-BitBin is a platform that we created for easy sharing of anything you write but especially your code. It gives you all the benefits of a code editor with syntax highlighting and also shares it with your friends and colleagues with one click. Once you published your code, you get a unique link and with that link it will always stay accessible! Unless you delete the code of course.
+BitBin is a platform that we created for easy sharing of anything you write but especially your code. It gives you all the benefits of a code editor with syntax highlighting and also shares it with your friends and colleagues with a few clicks. Once you published your code, you get a unique link and with that link it will always stay accessible! There will be some features added in the future, like you can edit the code you posted and more!
+
 
 # CodeMirror
-
 [![Build Status](https://github.com/codemirror/codemirror/workflows/main/badge.svg)](https://github.com/codemirror/codemirror/actions)
 [![NPM version](https://img.shields.io/npm/v/codemirror.svg)](https://www.npmjs.org/package/codemirror)
-
 CodeMirror is a versatile text editor implemented in JavaScript for
 the browser. It is specialized for editing code, and comes with over
 100 language modes and various addons that implement more advanced
