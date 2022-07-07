@@ -1,8 +1,8 @@
 <?php
 /* Connecting to the database. */
 $servername = "localhost";
-$username = "ani";
-$password = "zyq2wmk@ceu!KAD8nkm";
+$username = "bit_academy";
+$password = "bit_academy";
 $dbName = "ani";
 
 // Connectie met de database maken
