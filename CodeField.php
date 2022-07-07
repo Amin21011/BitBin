@@ -36,7 +36,7 @@
         <div class="Bitbin">
             <div class="Bitbin-form">
                 <form id="Bitbin" action="saveCode.php" method="POST">
-                    <div class="Bitbin-header">
+                <div class="Bitbin-header">
                         <div class="Bitbin-Left">
                             <h3>Your code:</h3>
                         </div>
@@ -55,6 +55,7 @@
                                 <option value="swift">Swift</option>
                                 <option value="sql">SQL</option>
                             </select>
+                            <input type="submit" id="sharebutton" value="Share" name="PageContent">
                         </div>
                     </div>
                     <div class="BitBin-textField">
@@ -64,7 +65,6 @@
                             }
                         ?></textarea>
                     </div>
-                    <input type="submit" id="sharebutton" value="Share" name="PageContent">
                 </form>
             </div>
         </div>
