@@ -1,6 +1,6 @@
 <?php
 /* Connecting to the database. */
-$servername = "https://167.172.40.243/phpMyAdmin/";
+$servername = "projects.bit-academy.nl";
 $username = "ani";
 $password = "zyq2wmk@ceu!KAD8nkm";
 $dbName = "ani";
