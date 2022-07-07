@@ -1,15 +1,18 @@
 <?php
-
 include 'conn.php';
 
 $uniqid = $_GET['uniqid'] ?? '';
+$updateViewers = "UPDATE codedata SET views = views + 1 WHERE uniqueLink = ?";
+$updateStmt = $pdo->prepare($updateViewers);
+$updateStmt->execute([$uniqid]);
 
-$sql2 = "SELECT code,language FROM codedata WHERE uniqueLink = ? LIMIT 1";
+$sql2 = "SELECT code,language, views FROM codedata WHERE uniqueLink = ? LIMIT 1";
 $smtmt = $pdo->prepare($sql2);
 $smtmt->execute([$uniqid]);
 $result = $smtmt->fetch();
 $code = $result['code'];
 $language = $result['language'];
+$views = $result['views'];
 ?>
 
 <!DOCTYPE html>
@@ -33,25 +36,27 @@ $language = $result['language'];
     <script src="CodeMirror-5.65.4/addon/edit/matchbrackets.js"></script>
         <!-- Css for the textarea-->
     <link href="CodeMirror-5.65.4/theme/dracula.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="GetCode.css">
+    <link rel="stylesheet" href="SeeCode.css">
 </head>
         <body>
             <nav class="navbar">
                 <a href="index.php" class="logo">
                     <h1>BitBin</h1>
                 </a>
-
-            <div class="nav-links">
-                <div class="nav-item">
-                    <a href="CodeField.php">Code</a>
+                <h4 class="Views">Number of visitors: <?= $views ?> time</h4>
+                <div class="nav-links">
+                    <div class="nav-item">
+                        <a href="CodeField.php">Code</a>
+                    </div>
                 </div>
             </nav>
             <div class="Bitbin-header">
-                    <div class="language">
-                        <h4 id="language" data-language="<?= $language ?>">Language Selected: <?= $language ?></h4>
-                        <input type="text" id="LinkArea">
-                        <button id="copyButton" onclick="CopyLink()">Copy Link</button> <br><br>
-                    </div>
+                <div class="Bitbin-Left">
+                    <h4 id="language" data-language="<?= $language ?>">Language Selected: <?= $language ?></h4>
+                </div>
+                <div class="BitBin-right">
+                    <input type="text" id="LinkArea">
+                    <button id="copyButton" onclick="CopyLink()">Copy Link</button> <br><br>
                 </div>
             </div>
             <textarea name="codeView" id="codeView" readonly><?php 

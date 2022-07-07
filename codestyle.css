@@ -50,25 +50,24 @@
         margin-right: 5px;
         height: 30px;
     }
-    #sharebutton {
-        cursor: pointer;
-        background-color: #57be8e;
-        color: white;
+
+    .BitBin-right {
+        display: flex;
+        align-items: center;
     }
+
     /* Making the submit button look better. */
     input[type=submit] {
+        cursor: pointer;
         border-radius: 8px;
+        color: white;
+        background-color: #57be8e;
         border-color: white;
         height: 30px;
         width: 70px;
         font-size: 13px;
     }
 
-    #sharebutton {
-        position:absolute;
-        top: 50px;
-        right: 250px;
-    }
     /* It's the CSS for the CodeMirror editor (AKA The code textfield). */
     .CodeMirror {
         width: 98.5%;
